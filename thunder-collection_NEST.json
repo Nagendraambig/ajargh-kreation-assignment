@@ -1,0 +1,147 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "NEST",
+    "dateExported": "2023-05-29T08:40:23.209Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2a615072-6e35-42e1-bbe5-c87d85b9a147",
+            "colId": "06ec3bd4-d280-4bc5-952f-406e406f86b8",
+            "containerId": "",
+            "name": "Sign In",
+            "url": "http://localhost:3000/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-05-28T08:44:17.611Z",
+            "modified": "2023-05-29T06:00:49.023Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"nagedra@test.com\",\n  \"password\": \"nagedra\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "88d90a5a-b6a0-47cc-af68-8986e80e02bf",
+            "colId": "06ec3bd4-d280-4bc5-952f-406e406f86b8",
+            "containerId": "",
+            "name": "Sign Up",
+            "url": "http://localhost:3000/auth/signup",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-05-28T08:45:38.040Z",
+            "modified": "2023-05-28T13:49:30.442Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"nagedra@test.com\",\n  \"password\": \"nagedra\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "dc7da953-753e-44a7-85c6-44421bf1b4b4",
+            "colId": "06ec3bd4-d280-4bc5-952f-406e406f86b8",
+            "containerId": "",
+            "name": "User Info",
+            "url": "http://localhost:3000/users/me",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-05-28T08:51:40.683Z",
+            "modified": "2023-05-29T06:11:09.414Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoibmFnZWRyYUB0ZXN0LmNvbSIsImlhdCI6MTY4NTM0MDA0OSwiZXhwIjoxNjg1MzQwOTQ5fQ.1GiU-kHshb_qAzxcfysclfSgbHbVl1Uwf2tpgtVjX8o"
+            },
+            "tests": []
+        },
+        {
+            "_id": "4effe51a-c2aa-4779-8e6d-3963f58e5d55",
+            "colId": "06ec3bd4-d280-4bc5-952f-406e406f86b8",
+            "containerId": "",
+            "name": "List Todos",
+            "url": "http://localhost:3000/todos/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-05-29T06:37:48.328Z",
+            "modified": "2023-05-29T06:38:15.537Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoibmFnZWRyYUB0ZXN0LmNvbSIsImlhdCI6MTY4NTM0MTkwNCwiZXhwIjoxNjg1MzQyODA0fQ.ZMZ93hhCgDxGEeqpFeyLlAg065Vgp56tEIa5CT12dbU"
+            },
+            "tests": []
+        },
+        {
+            "_id": "2889184a-332f-48e5-995f-785c4eae7b12",
+            "colId": "06ec3bd4-d280-4bc5-952f-406e406f86b8",
+            "containerId": "",
+            "name": "Create TODO",
+            "url": "http://localhost:3000/todos/",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-05-29T06:39:10.973Z",
+            "modified": "2023-05-29T06:39:10.973Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"test 1\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoibmFnZWRyYUB0ZXN0LmNvbSIsImlhdCI6MTY4NTM0MTkwNCwiZXhwIjoxNjg1MzQyODA0fQ.ZMZ93hhCgDxGEeqpFeyLlAg065Vgp56tEIa5CT12dbU"
+            },
+            "tests": []
+        },
+        {
+            "_id": "476eb308-fca5-463b-a343-8b7ed176a42e",
+            "colId": "06ec3bd4-d280-4bc5-952f-406e406f86b8",
+            "containerId": "",
+            "name": "Edit Todo By Id",
+            "url": "http://localhost:3000/todos/2",
+            "method": "PATCH",
+            "sortNum": 60000,
+            "created": "2023-05-29T06:42:26.435Z",
+            "modified": "2023-05-29T06:42:26.435Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"test new\",\n    \"status\": \"done\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoibmFnZWRyYUB0ZXN0LmNvbSIsImlhdCI6MTY4NTM0MTkwNCwiZXhwIjoxNjg1MzQyODA0fQ.ZMZ93hhCgDxGEeqpFeyLlAg065Vgp56tEIa5CT12dbU"
+            },
+            "tests": []
+        },
+        {
+            "_id": "711e1c01-a0da-4ac4-8daf-9a8a0cbea5e0",
+            "colId": "06ec3bd4-d280-4bc5-952f-406e406f86b8",
+            "containerId": "",
+            "name": "Delete TODO By Id",
+            "url": "http://localhost:3000/todos/3",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-05-29T06:42:58.993Z",
+            "modified": "2023-05-29T06:43:48.783Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoibmFnZWRyYUB0ZXN0LmNvbSIsImlhdCI6MTY4NTM0MTkwNCwiZXhwIjoxNjg1MzQyODA0fQ.ZMZ93hhCgDxGEeqpFeyLlAg065Vgp56tEIa5CT12dbU"
+            },
+            "tests": []
+        }
+    ]
+}
